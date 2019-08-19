@@ -1,0 +1,144 @@
+# aws cloudformation validate-template --template-body file://main.yaml --region eu-west-1 --profile tsrdev
+
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  UploadsBucketName:
+    Description: 'Name of uploads bucket.'
+    Type: String
+    Default: ''
+
+Resources:
+# S3 Buckets
+
+  Bucket1:
+    Type: AWS::S3::Bucket
+
+  Bucket2:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref UploadsBucketName
+
+# SQS Queues
+
+  Queue1: 
+    Type: 'AWS::SQS::Queue'
+    DependsOn: Queue1DLQ
+    Properties:
+      RedrivePolicy: 
+          deadLetterTargetArn: !GetAtt Queue1DLQ.Arn
+          maxReceiveCount: 5
+
+  Queue1DLQ: # 
+    Type: 'AWS::SQS::Queue'
+
+
+  EC2APIInstanceProfile: 
+    Type: "AWS::IAM::InstanceProfile"
+    Properties: 
+      Path: "/"
+      Roles: 
+        - 
+          Ref: RoleForEC2API
+  RoleForEC2API:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument: 
+        Version: "2012-10-17"
+        Statement: 
+          - 
+            Effect: "Allow"
+            Principal: 
+              Service: 
+                - "ec2.amazonaws.com"
+            Action: 
+              - "sts:AssumeRole"
+      Path: "/"
+      Policies:
+        -
+          PolicyName: TSRAPIEC2API
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+            - 
+              Effect: Allow
+              Action:
+              - s3:PutObject
+              - s3:DeleteObject
+              - s3:GetObject
+              Resource:
+              - !Join ["",[!GetAtt Bucket2.Arn, "/*"]]
+            - 
+              Effect: Allow
+              Action:
+              - logs:CreateLogGroup
+              - logs:CreateLogStream
+              - logs:PutLogEvents
+              - logs:DescribeLogGroups
+              Resource:
+              - arn:aws:logs:*:*:*
+            - 
+              Effect: Allow
+              Action:
+              - ssm:GetParameter
+              Resource:
+              - arn:aws:ssm:eu-west-1:*
+            - 
+              Effect: Allow
+              Action:
+              - sqs:*
+              Resource:
+              - '*'
+
+#SSM Parameters
+
+  S3BucketName1:
+    Type: "AWS::SSM::Parameter"
+    Properties:
+      Description: S3 bucket 1 name
+      Name: Name-Bucket1
+      Type: String
+      Value: !Ref Bucket1
+  S3BucketName2:
+    Type: "AWS::SSM::Parameter"
+    Properties:
+      Description: S3 bucket 2 name
+      Name: Name-Bucket2
+      Type: String
+      Value: !Ref Bucket2
+  
+  QueueURL:
+    Type: "AWS::SSM::Parameter"
+    Properties:
+      Description: URL of the queue
+      Name: SQSURL-Queue1
+      Type: String
+      Value: !Ref Queue1
+
+  QueueARN:
+    Type: "AWS::SSM::Parameter"
+    Properties:
+      Description: ARN of the queue
+      Name: SQSArn-Queue1
+      Type: String
+      Value: !GetAtt Queue1.Arn
+
+Outputs:
+    StackName:
+      Description: 'Stack name.'
+      Value: !Sub '${AWS::StackName}'
+    SQSArn:
+      Description: 'ARN of the SQS queue'
+      Value: !GetAtt Queue1.Arn
+      Export:
+        Name: !Sub '${AWS::StackName}-SQSArn'
+    Bucket1Name:
+      Description: 'Name of the bucket 1 '
+      Value: !Ref Bucket1
+      Export:
+        Name: !Sub '${AWS::StackName}-Bucket1Name'
+    Bucket1DomainName:
+      Description: 'Domain name of the bucket 1 '
+      Value: !GetAtt  Bucket1.DomainName
+      Export:
+        Name: !Sub '${AWS::StackName}-Bucket1DomainName'
+ 

@@ -18,7 +18,7 @@
 5. Upload *template.yaml* you downloaded in step 1.
 6. Click **Next**.
 7. Enter a name for the stack: *student-X-cfstack*.
-8. Enter admin and user passwords.
+8. Enter a bucket name.
 9. Click *Next**.
 10. Click **Next**.
 11. Check the checkmark **I acknowledge that AWS CloudFormation might create IAM resources.**.

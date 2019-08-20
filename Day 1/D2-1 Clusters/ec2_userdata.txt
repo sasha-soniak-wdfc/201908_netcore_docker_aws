@@ -1,0 +1,4 @@
+#!/bin/bash
+mkdir -p /etc/ecs
+touch /etc/ecs/ecs.config
+echo ECS_CLUSTER=STUDENT-X-CLI-CLUSTER >> /etc/ecs/ecs.config

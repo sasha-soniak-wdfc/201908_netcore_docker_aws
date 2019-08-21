@@ -1,0 +1,14 @@
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/bin/Debug/netcoreapp2.2/service1.deps.json
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/bin/Debug/netcoreapp2.2/service1.runtimeconfig.json
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/bin/Debug/netcoreapp2.2/service1.runtimeconfig.dev.json
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/bin/Debug/netcoreapp2.2/service1.dll
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/bin/Debug/netcoreapp2.2/service1.pdb
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.csprojAssemblyReference.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.csproj.CoreCompileInputs.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.RazorAssemblyInfo.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.RazorAssemblyInfo.cs
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.AssemblyInfoInputs.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.AssemblyInfo.cs
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.RazorTargetAssemblyInfo.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.dll
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/service1/obj/Debug/netcoreapp2.2/service1.pdb

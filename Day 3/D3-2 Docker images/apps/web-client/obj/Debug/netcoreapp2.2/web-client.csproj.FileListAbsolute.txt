@@ -1,0 +1,14 @@
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.csprojAssemblyReference.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.csproj.CoreCompileInputs.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.RazorAssemblyInfo.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.RazorAssemblyInfo.cs
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.AssemblyInfoInputs.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.AssemblyInfo.cs
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/bin/Debug/netcoreapp2.2/web-client.deps.json
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/bin/Debug/netcoreapp2.2/web-client.runtimeconfig.json
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/bin/Debug/netcoreapp2.2/web-client.runtimeconfig.dev.json
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/bin/Debug/netcoreapp2.2/web-client.dll
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/bin/Debug/netcoreapp2.2/web-client.pdb
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.RazorTargetAssemblyInfo.cache
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.dll
+/Users/przemek/Documents/Chmurowisko/SzkolenieWONGA/Labs/D3/D3-2 Docker images/apps/web-client/obj/Debug/netcoreapp2.2/web-client.pdb
